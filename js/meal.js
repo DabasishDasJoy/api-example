@@ -8,7 +8,7 @@ const loadMeal = (search) => {
 const displayData = (data) => {
     console.log(data.meals);
     const mealsContainer = document.getElementById('meal-conatiner');
-    mealsContainer.innerHTML = ``;
+    mealsContainer.textContent = ``; //Better to use textContent
     data.meals.forEach(meal => {
         const div = document.createElement('div');
         div.classList.add('col');
